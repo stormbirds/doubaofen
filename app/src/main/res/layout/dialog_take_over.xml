@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#00000000" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.tiangou.douxiaomi.view.shape.ShapeLinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="40dp" app:cornesRadius="10dp" app:solidColor="#ffffff">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="52dp">
+            <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#ff333333" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="接管工单" android:layout_centerInParent="true"/>
+            <ImageView android:id="@+id/iv_close" android:padding="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bg_77" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <android.support.v7.widget.RecyclerView android:id="@+id/recy_data" android:paddingLeft="24dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never"/>
+        <com.tiangou.douxiaomi.view.shape.ShapeTextView android:textColor="#ffffff" android:gravity="center" android:id="@+id/tv_confirm" android:layout_width="match_parent" android:layout_height="34dp" android:layout_marginLeft="51dp" android:layout_marginTop="20dp" android:layout_marginRight="51dp" android:layout_marginBottom="26dp" android:text="确认接管" app:cornesRadius="17dp" app:solidColor="#ef250f"/>
+    </com.tiangou.douxiaomi.view.shape.ShapeLinearLayout>
+</LinearLayout>

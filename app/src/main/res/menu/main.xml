@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@+id/menu_downlooad" android:orderInCategory="100" android:title="下载语音" app:showAsAction="never"/>
+    <item android:id="@+id/menu_wx" android:orderInCategory="100" android:title="设置微信帐号" app:showAsAction="never"/>
+    <item android:id="@+id/menu_qq" android:orderInCategory="100" android:title="设置QQ帐号" app:showAsAction="never"/>
+    <item android:id="@+id/menu_status" android:orderInCategory="100" android:title="重启服务" app:showAsAction="never"/>
+</menu>

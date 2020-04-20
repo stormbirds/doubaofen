@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/fl_home_container" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+    <View android:background="#dddddd" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_tab" android:layout_width="match_parent" android:layout_height="47dp">
+        <TextView android:id="@+id/tv_home" android:text="首页" android:drawableTop="@drawable/home_btn1" style="@style/HomeRadioButton"/>
+        <TextView android:id="@+id/tv_chat" android:visibility="gone" android:text="飞聊" android:drawableTop="@drawable/home_btn2" style="@style/HomeRadioButton"/>
+        <TextView android:id="@+id/tv_ass" android:visibility="gone" android:text="联动" android:drawableTop="@drawable/home_btn2" style="@style/HomeRadioButton"/>
+        <TextView android:id="@+id/tv_ass_1" android:text="助手" android:drawableTop="@drawable/home_btn2" style="@style/HomeRadioButton"/>
+        <TextView android:id="@+id/tv_connect" android:text="人脉" android:drawableTop="@drawable/home_btn2" style="@style/HomeRadioButton"/>
+        <TextView android:id="@+id/tv_mine" android:text="我的" android:drawableTop="@drawable/home_btn2" style="@style/HomeRadioButton"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/bg_round_white_6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginRight="30dp">
+    <TextView android:textSize="14dp" android:textColor="#666666" android:gravity="center" android:id="@+id/tv_title" android:padding="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="提示" android:layout_weight="1"/>
+    <View android:background="#dddddd" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="5dp" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="110dp" android:layout_weight="1">
+        <TextView android:textSize="18dp" android:textStyle="bold" android:textColor="#333333" android:gravity="center" android:id="@+id/tv_dialog_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=""/>
+        <TextView android:textSize="13dp" android:textColor="#999999" android:gravity="center" android:id="@+id/tv_dialog_message" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="" android:lineSpacingExtra="5dp"/>
+    </LinearLayout>
+    <View android:background="#dddddd" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="50dp">
+        <Button android:textSize="16dp" android:textColor="#000" android:id="@+id/btn_dialog_cancel" android:background="@drawable/bg_round_white_bottom_6" android:paddingTop="7dp" android:paddingBottom="7dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="1px" android:text="取消" android:layout_weight="1" style="?android:attr/borderlessButtonStyle"/>
+        <View android:id="@+id/view_line" android:background="#dddddd" android:layout_width="1px" android:layout_height="match_parent"/>
+        <Button android:textSize="16dp" android:textColor="@color/colorPrimary" android:gravity="center" android:id="@+id/btn_dialog_submit" android:background="@drawable/bg_round_white_bottom_6" android:paddingTop="7dp" android:paddingBottom="7dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="确定" android:layout_weight="1" style="?android:attr/borderlessButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>

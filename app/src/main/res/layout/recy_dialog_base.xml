@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="#ff666666" android:id="@+id/tv_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="备注"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                <EditText android:textSize="13sp" android:textColor="#666666" android:textColorHint="#b4b4b4" android:id="@+id/et_content" android:background="#ffffff" android:paddingTop="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:hint="可输入多行内容" android:layout_weight="1"/>
+                <TextView android:textSize="13sp" android:textColor="#666666" android:textColorHint="#b4b4b4" android:id="@+id/tv_content" android:background="#ffffff" android:paddingTop="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_weight="1"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/iv_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="18dp"/>
+        </LinearLayout>
+        <View android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1dp"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#fff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="#4d71c7" android:layout_width="match_parent" android:layout_height="45dp">
+        <ImageView android:padding="12dp" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/fanhui"/>
+        <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="#ffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="45dp" android:text="去水印" android:layout_centerInParent="true" android:elevation="2dp"/>
+    </RelativeLayout>
+    <TextView android:textSize="13sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="本站已支持解析下载抖音，快手，陌陌，火山，微视，微博，美拍，今日头条，西瓜视频等平台"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="40dp" android:layout_margin="15dp">
+        <EditText android:textSize="13sp" android:gravity="center_vertical" android:id="@+id/et_url" android:background="#f4f4f4" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="40dp" android:hint="请输入分享链接" android:singleLine="true" android:layout_weight="1"/>
+        <Button android:id="@+id/tv_analysis" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="解析"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_download" android:padding="16dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="17sp" android:textStyle="bold" android:textColor="#4d71c7" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="视频信息："/>
+        <TextView android:textSize="15sp" android:textColor="#333" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+        <ImageView android:id="@+id/iv_cover" android:layout_width="200dp" android:layout_height="200dp" android:layout_margin="20dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="40dp">
+            <TextView android:textColor="#fff" android:gravity="center" android:id="@+id/tv_download_img" android:background="#4d71c7" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="10dp" android:text="下载图片" android:layout_weight="1"/>
+            <TextView android:textColor="#fff" android:gravity="center" android:id="@+id/tv_download_video" android:background="#4d71c7" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:text="下载视频" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

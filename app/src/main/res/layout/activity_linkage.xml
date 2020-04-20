@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#f2f2f2" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_width="match_parent" android:layout_height="190dp" android:src="@drawable/bg_main_top"/>
+        <ImageView android:id="@+id/iv_back" android:padding="13dp" android:layout_width="45dp" android:layout_height="45dp" android:layout_marginTop="25dp" android:src="@drawable/fanhui"/>
+        <TextView android:textSize="27sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:layout_marginTop="20dp" android:text="联动配置" android:layout_below="@+id/iv_back"/>
+    </RelativeLayout>
+    <RelativeLayout android:background="#4d71c7" android:visibility="gone" android:layout_width="match_parent" android:layout_height="45dp">
+        <ImageView android:padding="13dp" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/fanhui"/>
+        <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="#ffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="45dp" android:text="联动配置" android:layout_centerInParent="true" android:elevation="2dp"/>
+    </RelativeLayout>
+    <com.tiangou.douxiaomi.view.shape.ShapeLinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="-50dp" android:layout_weight="1" app:solidColor="#f2f2f2" app:topLeftRadius="14dp" app:topRightRadius="14dp">
+        <android.support.v7.widget.RecyclerView android:id="@+id/recy_data" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_10" android:layout_weight="1" android:overScrollMode="never"/>
+    </com.tiangou.douxiaomi.view.shape.ShapeLinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.tiangou.douxiaomi.view.shape.ShapeTextView android:textSize="15sp" android:textStyle="bold" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tv_add" android:layout_width="match_parent" android:layout_height="46dp" android:layout_margin="@dimen/dp_10" android:text="添加" android:layout_weight="1" app:cornesRadius="23dp" app:solidColor="#3080fe"/>
+        <com.tiangou.douxiaomi.view.shape.ShapeTextView android:textSize="15sp" android:textStyle="bold" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tv_start" android:layout_width="match_parent" android:layout_height="46dp" android:layout_margin="@dimen/dp_10" android:text="运行" android:layout_weight="1" app:cornesRadius="23dp" app:solidColor="#ff5353"/>
+    </LinearLayout>
+</LinearLayout>

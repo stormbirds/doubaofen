@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:background="#f8f8f8" android:layout_width="match_parent" android:layout_height="40dp">
+        <TextView android:textSize="15sp" android:textColor="#4c9ff8" android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/tx_cancel" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="取消"/>
+        <TextView android:textSize="16sp" android:textColor="#333333" android:layout_gravity="center" android:id="@+id/tx_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="15sp" android:textColor="#4c9ff8" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/tx_finish" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="完成"/>
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:background="#ffffff" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.tiangou.douxiaomi.pickerview.LoopView android:layout_gravity="center_horizontal" android:id="@+id/loop_data" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <TextView android:textColor="#b3b3b3" android:layout_gravity="center" android:id="@+id/tx_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40dp"/>
+            </FrameLayout>
+        </LinearLayout>
+        <View android:layout_gravity="center_vertical" android:background="#a5a5a5" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginBottom="15dp"/>
+        <View android:layout_gravity="center_vertical" android:background="#a5a5a5" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="15dp"/>
+    </FrameLayout>
+    <View android:background="#e2e2e2" android:layout_width="match_parent" android:layout_height="1px"/>
+</LinearLayout>

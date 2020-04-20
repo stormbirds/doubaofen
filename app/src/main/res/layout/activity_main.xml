@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="14dp" android:textColor="#000" android:gravity="center" android:layout_width="match_parent" android:layout_height="40dp" android:text="抖音小助手"/>
+    <ImageView android:background="#ccc" android:layout_width="match_parent" android:layout_height="100dp"/>
+    <TextView android:textSize="12dp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="软件设置"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="35dp">
+        <TextView android:textSize="12dp" android:textColor="#000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="辅助权限："/>
+        <TextView android:textSize="12dp" android:textColor="@android:color/holo_green_dark" android:id="@+id/tv_setting_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已开启"/>
+        <TextView android:textSize="11dp" android:textColor="#fff" android:gravity="center" android:id="@+id/tv_setting_open" android:background="@drawable/bg_rect" android:layout_width="wrap_content" android:layout_height="22dp" android:layout_marginLeft="10dp" android:text="开启"/>
+        <View android:layout_width="match_parent" android:layout_height="1px" android:layout_weight="1"/>
+        <TextView android:textSize="12dp" android:textColor="#000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="悬浮窗权限："/>
+        <TextView android:textSize="12dp" android:textColor="@android:color/holo_green_dark" android:id="@+id/tv_sus_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已开启"/>
+        <TextView android:textSize="11dp" android:textColor="#fff" android:gravity="center" android:id="@+id/tv_sus_open" android:background="@drawable/bg_rect" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="22dp" android:layout_marginLeft="10dp" android:text="开启"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <TextView android:textSize="12dp" android:textColor="#000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="功能区："/>
+        <RadioGroup android:orientation="horizontal" android:id="@+id/rg_type" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:textSize="12dp" android:id="@+id/rb_type_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="私信" android:layout_weight="1"/>
+            <RadioButton android:textSize="12dp" android:id="@+id/rb_type_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="关注" android:layout_weight="1"/>
+            <RadioButton android:textSize="12dp" android:id="@+id/rb_type_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="评论" android:layout_weight="1"/>
+            <RadioButton android:textSize="12dp" android:id="@+id/rb_type_4" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="同城" android:layout_weight="1"/>
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp">
+        <TextView android:textSize="12dp" android:textColor="#000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="招呼语："/>
+        <TextView android:textSize="12dp" android:textColor="@android:color/holo_green_dark" android:id="@+id/tv_content_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已设置0条"/>
+        <TextView android:textSize="11dp" android:textColor="#fff" android:gravity="center" android:id="@+id/tv_content_change" android:background="@drawable/bg_rect" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="22dp" android:layout_marginLeft="10dp" android:text="修改"/>
+    </LinearLayout>
+    <TextView android:textSize="12dp" android:textColor="#000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginBottom="10dp" android:text="配置区："/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <CheckBox android:textSize="12dp" android:gravity="center_vertical" android:id="@+id/cb_friend_mine" android:layout_width="match_parent" android:layout_height="35dp" android:text="我的关注/粉丝"/>
+        <CheckBox android:textSize="12dp" android:gravity="center_vertical" android:id="@+id/cb_address" android:layout_width="match_parent" android:layout_height="35dp" android:text="通讯录"/>
+        <CheckBox android:textSize="12dp" android:gravity="center_vertical" android:id="@+id/cb_friend_other" android:layout_width="match_parent" android:layout_height="35dp" android:text="TA的关注/粉丝"/>
+        <CheckBox android:textSize="12dp" android:gravity="center_vertical" android:id="@+id/cb_recommend" android:layout_width="match_parent" android:layout_height="35dp" android:text="首页推荐"/>
+        <CheckBox android:textSize="12dp" android:gravity="center_vertical" android:id="@+id/cb_live_now" android:layout_width="match_parent" android:layout_height="35dp" android:text="当前城市评论"/>
+        <CheckBox android:textSize="12dp" android:gravity="center_vertical" android:id="@+id/cb_live_other" android:layout_width="match_parent" android:layout_height="35dp" android:text="其他城市评论"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:id="@+id/ll_person_num" android:layout_width="wrap_content" android:layout_height="35dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+                <TextView android:textSize="12dp" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="人数："/>
+                <EditText android:textSize="12dp" android:id="@+id/et_person_num" android:layout_width="80dp" android:layout_height="wrap_content" android:text="100" android:inputType="number"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@+id/ll_duration" android:layout_width="wrap_content" android:layout_height="35dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+                <TextView android:textSize="12dp" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="时间间隔："/>
+                <EditText android:textSize="12dp" android:id="@+id/et_duration" android:layout_width="80dp" android:layout_height="wrap_content" android:text="1" android:inputType="number"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@+id/ll_city" android:layout_width="wrap_content" android:layout_height="35dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+                <TextView android:textSize="12dp" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="自定义城市数量："/>
+                <EditText android:textSize="12dp" android:id="@+id/et_city_start" android:layout_width="50dp" android:layout_height="wrap_content" android:text="1" android:inputType="number"/>
+                <TextView android:textSize="12dp" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" - "/>
+                <EditText android:textSize="12dp" android:id="@+id/et_city_end" android:layout_width="50dp" android:layout_height="wrap_content" android:text="1" android:inputType="number"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+    <TextView android:textColor="#fff" android:gravity="center" android:id="@+id/tv_douyin_open" android:background="@color/colorPrimaryDark" android:layout_width="match_parent" android:layout_height="50dp" android:text="启动抖音"/>
+</LinearLayout>

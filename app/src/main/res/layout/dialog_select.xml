@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.tiangou.douxiaomi.view.shape.ShapeLinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" app:cornesRadius="10dp" app:solidColor="#ffffff">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="52dp">
+            <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#ff333333" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选择影响范围"/>
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView android:id="@+id/recy_data" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never"/>
+    </com.tiangou.douxiaomi.view.shape.ShapeLinearLayout>
+</LinearLayout>

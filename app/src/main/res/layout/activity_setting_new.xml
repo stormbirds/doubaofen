@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#f2f2f2" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_width="match_parent" android:layout_height="190dp" android:src="@drawable/bg_main_top"/>
+        <ImageView android:id="@+id/iv_back" android:padding="12dp" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginTop="25dp" android:src="@drawable/fanhui"/>
+        <TextView android:textSize="27sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:layout_marginTop="20dp" android:text="设置" android:layout_below="@+id/iv_back"/>
+        <TextView android:textSize="13sp" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/tv_save" android:layout_width="60dp" android:layout_height="30dp" android:layout_marginTop="30dp" android:text="保存" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <com.tiangou.douxiaomi.view.shape.ShapeLinearLayout android:orientation="vertical" android:paddingLeft="14dp" android:paddingTop="20dp" android:paddingRight="14dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="-50dp" android:layout_weight="1" app:solidColor="#ffffff" app:topLeftRadius="14dp" app:topRightRadius="14dp">
+        <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:textSize="19sp" android:textStyle="bold" android:textColor="#ff171717" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="关键权限"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="45dp">
+                        <TextView android:textSize="14sp" android:textColor="#ff999999" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="辅助设置" android:layout_weight="1"/>
+                        <CheckBox android:id="@+id/cb_setting_status" android:background="@drawable/cb_setting_1" android:layout_width="35dp" android:layout_height="20dp" android:button="@null"/>
+                    </LinearLayout>
+                    <View android:background="@color/black" android:layout_width="match_parent" android:layout_height="1dp" android:alpha="0.05"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="45dp">
+                        <TextView android:textSize="14sp" android:textColor="#ff999999" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="悬浮窗权限" android:layout_weight="1"/>
+                        <CheckBox android:id="@+id/cb_sus_status" android:background="@drawable/cb_setting_1" android:layout_width="35dp" android:layout_height="20dp" android:button="@null"/>
+                    </LinearLayout>
+                    <View android:background="@color/black" android:layout_width="match_parent" android:layout_height="1dp" android:alpha="0.05"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="45dp">
+                        <TextView android:textSize="14sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="招呼语"/>
+                        <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="#3080fe" android:gravity="right" android:id="@+id/tv_content_num" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="0条" android:drawableRight="@drawable/bg_right" android:drawablePadding="5dp" android:layout_weight="1"/>
+                    </LinearLayout>
+                    <View android:background="@color/black" android:layout_width="match_parent" android:layout_height="1dp" android:alpha="0.05"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="45dp">
+                        <TextView android:textSize="14sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="批量用户"/>
+                        <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="#3080fe" android:gravity="right" android:id="@+id/tv_user_num" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="0人" android:drawableRight="@drawable/bg_right" android:drawablePadding="5dp" android:layout_weight="1"/>
+                    </LinearLayout>
+                    <View android:background="@color/black" android:layout_width="match_parent" android:layout_height="1dp" android:alpha="0.05"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="19sp" android:textStyle="bold" android:textColor="#ff171717" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13dp" android:text="参数配置区"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="45dp">
+                        <TextView android:textSize="14sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="操作总次数"/>
+                        <EditText android:textSize="13sp" android:textStyle="bold" android:textColor="#3080fe" android:textColorHint="#3080fe" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/et_run_num" android:background="@color/transparent" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:text="1" android:hint="请输入总次数" android:layout_weight="1" android:inputType="number"/>
+                    </LinearLayout>
+                    <View android:background="@color/black" android:layout_width="match_parent" android:layout_height="1dp" android:alpha="0.05"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="45dp">
+                        <TextView android:textSize="14sp" android:textColor="#ff999999" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="信息发送随机间隔时间" android:layout_weight="1"/>
+                        <EditText android:textSize="13sp" android:textStyle="bold" android:textColor="#3080fe" android:textColorHint="#3080fe" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/et_duration_min" android:background="@color/transparent" android:paddingRight="10dp" android:layout_width="60dp" android:layout_height="match_parent" android:text="1" android:hint="请输入" android:inputType="number"/>
+                        <View android:background="#3080fe" android:layout_width="10dp" android:layout_height="1dp" android:layout_marginLeft="15dp"/>
+                        <EditText android:textSize="13sp" android:textStyle="bold" android:textColor="#3080fe" android:textColorHint="#3080fe" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/et_duration_max" android:background="@color/transparent" android:paddingRight="10dp" android:layout_width="60dp" android:layout_height="match_parent" android:text="1" android:hint="请输入" android:inputType="number"/>
+                    </LinearLayout>
+                    <View android:background="@color/black" android:layout_width="match_parent" android:layout_height="1dp" android:alpha="0.05"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="45dp">
+                        <TextView android:textSize="14sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="每批操作数"/>
+                        <EditText android:textSize="13sp" android:textStyle="bold" android:textColor="#3080fe" android:textColorHint="#3080fe" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/et_person_num" android:background="@color/transparent" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="请输入" android:layout_weight="1" android:inputType="number"/>
+                    </LinearLayout>
+                    <View android:background="@color/black" android:layout_width="match_parent" android:layout_height="1dp" android:alpha="0.05"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="45dp">
+                        <TextView android:textSize="14sp" android:textColor="#ff999999" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="每轮结束休息等待时间" android:layout_weight="1"/>
+                        <EditText android:textSize="13sp" android:textStyle="bold" android:textColor="#3080fe" android:textColorHint="#3080fe" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/et_run_sleep" android:background="@color/transparent" android:paddingRight="10dp" android:layout_width="60dp" android:layout_height="match_parent" android:hint="请输入" android:inputType="number"/>
+                        <View android:background="#3080fe" android:layout_width="10dp" android:layout_height="1dp"/>
+                        <EditText android:textSize="13sp" android:textStyle="bold" android:textColor="#3080fe" android:textColorHint="#3080fe" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/et_run_sleep_max" android:background="@color/transparent" android:paddingRight="10dp" android:layout_width="60dp" android:layout_height="match_parent" android:hint="请输入" android:inputType="number"/>
+                    </LinearLayout>
+                    <View android:background="@color/black" android:layout_width="match_parent" android:layout_height="1dp" android:alpha="0.05"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="45dp">
+                        <TextView android:textSize="14sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="招呼语单次发送条数"/>
+                        <EditText android:textSize="13sp" android:textStyle="bold" android:textColor="#3080fe" android:textColorHint="#3080fe" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/et_message_count" android:background="@color/transparent" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="请输入" android:layout_weight="1" android:inputType="number"/>
+                    </LinearLayout>
+                    <View android:background="@color/black" android:layout_width="match_parent" android:layout_height="1dp" android:alpha="0.05"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="45dp">
+                        <TextView android:textSize="14sp" android:textColor="#ff999999" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="招呼语随机发送" android:layout_weight="1"/>
+                        <CheckBox android:id="@+id/cb_send_random" android:background="@drawable/cb_setting_1" android:layout_width="35dp" android:layout_height="20dp" android:button="@null"/>
+                    </LinearLayout>
+                    <View android:background="@color/black" android:layout_width="match_parent" android:layout_height="1dp" android:alpha="0.05"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="45dp">
+                        <TextView android:textSize="14sp" android:textColor="#ff999999" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="操作对象" android:layout_weight="1"/>
+                        <CheckBox android:gravity="center_vertical" android:id="@+id/cb_man" android:paddingLeft="5dp" android:paddingTop="@dimen/dp_10" android:paddingBottom="@dimen/dp_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:button="@drawable/cb_setting_2" android:text="男"/>
+                        <CheckBox android:gravity="center_vertical" android:id="@+id/cb_women" android:paddingLeft="5dp" android:paddingTop="@dimen/dp_10" android:paddingBottom="@dimen/dp_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:button="@drawable/cb_setting_2" android:text="女"/>
+                        <CheckBox android:gravity="center_vertical" android:id="@+id/cb_unknow" android:paddingLeft="5dp" android:paddingTop="@dimen/dp_10" android:paddingBottom="@dimen/dp_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:button="@drawable/cb_setting_2" android:text="未知"/>
+                    </LinearLayout>
+                    <View android:background="@color/black" android:layout_width="match_parent" android:layout_height="1dp" android:alpha="0.05"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="19sp" android:textStyle="bold" android:textColor="#ff171717" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13dp" android:text="养号配置"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="45dp">
+                        <TextView android:textSize="14sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="操作次数"/>
+                        <EditText android:textSize="13sp" android:textStyle="bold" android:textColor="#3080fe" android:textColorHint="#3080fe" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/et_yang_totle" android:background="@color/transparent" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="请输入" android:layout_weight="1" android:inputType="number"/>
+                    </LinearLayout>
+                    <View android:background="@color/black" android:layout_width="match_parent" android:layout_height="1dp" android:alpha="0.05"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="45dp">
+                        <TextView android:textSize="14sp" android:textColor="#ff999999" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="操作间隔时间" android:layout_weight="1"/>
+                        <EditText android:textSize="13sp" android:textStyle="bold" android:textColor="#3080fe" android:textColorHint="#3080fe" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/et_yang_min" android:background="@color/transparent" android:paddingRight="10dp" android:layout_width="60dp" android:layout_height="match_parent" android:hint="请输入" android:inputType="number"/>
+                        <View android:background="#3080fe" android:layout_width="10dp" android:layout_height="1dp"/>
+                        <EditText android:textSize="13sp" android:textStyle="bold" android:textColor="#3080fe" android:textColorHint="#3080fe" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/et_yang_max" android:background="@color/transparent" android:paddingRight="10dp" android:layout_width="60dp" android:layout_height="match_parent" android:hint="请输入" android:inputType="number"/>
+                    </LinearLayout>
+                    <View android:background="@color/black" android:layout_width="match_parent" android:layout_height="1dp" android:alpha="0.05"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="45dp">
+                        <TextView android:textSize="14sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="评论次数"/>
+                        <EditText android:textSize="13sp" android:textStyle="bold" android:textColor="#3080fe" android:textColorHint="#3080fe" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/et_comment_num" android:background="@color/transparent" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="请输入" android:layout_weight="1" android:inputType="number"/>
+                    </LinearLayout>
+                    <View android:background="@color/black" android:layout_width="match_parent" android:layout_height="1dp" android:alpha="0.05"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="45dp">
+                        <TextView android:textSize="14sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点赞次数"/>
+                        <EditText android:textSize="13sp" android:textStyle="bold" android:textColor="#3080fe" android:textColorHint="#3080fe" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/et_praise_num" android:background="@color/transparent" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="请输入" android:layout_weight="1" android:inputType="number"/>
+                    </LinearLayout>
+                    <View android:background="@color/black" android:layout_width="match_parent" android:layout_height="1dp" android:alpha="0.05"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="45dp">
+                        <TextView android:textSize="14sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="关注次数"/>
+                        <EditText android:textSize="13sp" android:textStyle="bold" android:textColor="#3080fe" android:textColorHint="#3080fe" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/et_atten_num" android:background="@color/transparent" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="请输入" android:layout_weight="1" android:inputType="number"/>
+                    </LinearLayout>
+                    <View android:background="@color/black" android:layout_width="match_parent" android:layout_height="1dp" android:alpha="0.05"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="45dp">
+                        <TextView android:textSize="14sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="转发次数"/>
+                        <EditText android:textSize="13sp" android:textStyle="bold" android:textColor="#3080fe" android:textColorHint="#3080fe" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/et_forward_num" android:background="@color/transparent" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="请输入" android:layout_weight="1" android:inputType="number"/>
+                    </LinearLayout>
+                    <View android:background="@color/black" android:layout_width="match_parent" android:layout_height="1dp" android:alpha="0.05"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="45dp">
+                        <TextView android:textSize="14sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="自定义转发语"/>
+                        <EditText android:textSize="13sp" android:textStyle="bold" android:textColor="#3080fe" android:textColorHint="#3080fe" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/et_forward_text" android:background="@color/transparent" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:text="有爱转发" android:hint="请输入转发语" android:layout_weight="1"/>
+                    </LinearLayout>
+                    <View android:background="@color/black" android:layout_width="match_parent" android:layout_height="1dp" android:alpha="0.05"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="19sp" android:textStyle="bold" android:textColor="#ff171717" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13dp" android:text="定制配置"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="45dp">
+                        <TextView android:textSize="14sp" android:textColor="#ff999999" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="看视频时长" android:layout_weight="1"/>
+                        <EditText android:textSize="13sp" android:textStyle="bold" android:textColor="#3080fe" android:textColorHint="#3080fe" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/et_yang_look_min" android:background="@color/transparent" android:paddingRight="10dp" android:layout_width="60dp" android:layout_height="match_parent" android:hint="请输入" android:inputType="number"/>
+                        <View android:background="#3080fe" android:layout_width="10dp" android:layout_height="1dp"/>
+                        <EditText android:textSize="13sp" android:textStyle="bold" android:textColor="#3080fe" android:textColorHint="#3080fe" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/et_yang_look_max" android:background="@color/transparent" android:paddingRight="10dp" android:layout_width="60dp" android:layout_height="match_parent" android:hint="请输入" android:inputType="number"/>
+                    </LinearLayout>
+                    <View android:background="@color/black" android:layout_width="match_parent" android:layout_height="1dp" android:alpha="0.05"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="45dp">
+                        <TextView android:textSize="14sp" android:textColor="#ff999999" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="单个操作间隔" android:layout_weight="1"/>
+                        <EditText android:textSize="13sp" android:textStyle="bold" android:textColor="#3080fe" android:textColorHint="#3080fe" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/et_operation_min" android:background="@color/transparent" android:paddingRight="10dp" android:layout_width="60dp" android:layout_height="match_parent" android:hint="请输入" android:inputType="number"/>
+                        <View android:background="#3080fe" android:layout_width="10dp" android:layout_height="1dp"/>
+                        <EditText android:textSize="13sp" android:textStyle="bold" android:textColor="#3080fe" android:textColorHint="#3080fe" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/et_operation_max" android:background="@color/transparent" android:paddingRight="10dp" android:layout_width="60dp" android:layout_height="match_parent" android:hint="请输入" android:inputType="number"/>
+                    </LinearLayout>
+                    <View android:background="@color/black" android:layout_width="match_parent" android:layout_height="1dp" android:alpha="0.05"/>
+                </LinearLayout>
+                <TextView android:textSize="14sp" android:textColor="#ff999999" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="注：1.每条招呼语用%%分割开，使用时会随机取一条招呼语 2.招呼语单次发送条数为1则顺序发送否在为发送前x条 3.若打开招呼语随机开关，则每次发送的招呼语为随机顺序" android:lineSpacingExtra="5dp"/>
+            </LinearLayout>
+        </ScrollView>
+    </com.tiangou.douxiaomi.view.shape.ShapeLinearLayout>
+</LinearLayout>

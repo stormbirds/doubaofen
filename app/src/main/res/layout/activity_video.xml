@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/gray_f4f4f4" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="15dp">
+        <TextView android:textSize="16sp" android:textColor="@color/red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="需要操作的mp4文件路径："/>
+        <TextView android:gravity="center_vertical" android:id="@+id/tv_file" android:background="@color/white" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:hint="请选择要编辑的视频" android:lineSpacingExtra="5dp"/>
+    </LinearLayout>
+    <com.tiangou.douxiaomi.view.shape.ShapeTextView android:textColor="@color/red" android:gravity="center" android:id="@+id/tv_md5_change" android:layout_width="match_parent" android:layout_height="40dp" android:layout_margin="10dp" android:text="修改MD5值" app:cornesRadius="5dp" app:solidColor="@color/gray_cccccc"/>
+    <com.tiangou.douxiaomi.view.shape.ShapeTextView android:textColor="@color/red" android:gravity="center" android:id="@+id/tv_audio" android:layout_width="match_parent" android:layout_height="40dp" android:layout_margin="10dp" android:text="提取背景音乐" app:cornesRadius="5dp" app:solidColor="@color/gray_cccccc"/>
+    <com.tiangou.douxiaomi.view.shape.ShapeTextView android:textColor="@color/red" android:gravity="center" android:id="@+id/tv_video" android:layout_width="match_parent" android:layout_height="40dp" android:layout_margin="10dp" android:text="修改无声视频" app:cornesRadius="5dp" app:solidColor="@color/gray_cccccc"/>
+    <TextView android:textColor="@color/red_fd6662" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="备注：视频处理成功，原视频不做任何改变，新文件会保存在手机根目录/抖小秘/视频/下" android:lineSpacingExtra="5dp"/>
+</LinearLayout>
