@@ -1,9 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:background="#f4f4f4" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
-    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="20dp">
-        <TextView android:textSize="13dp" android:textColor="#000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="当前授权状态："/>
-        <TextView android:textSize="13dp" android:textColor="#000" android:id="@+id/tv_auth_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="未授权"/>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前授权状态："
+            android:textColor="#000"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/tv_auth_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="未授权"
+            android:textColor="#000"
+            android:textSize="13dp" />
     </LinearLayout>
-    <EditText android:textSize="13dp" android:textColor="#000" android:gravity="start" android:id="@+id/et_auth_code" android:background="#ffffff" android:padding="10dp" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="请输入授权码" android:lineSpacingExtra="5dp"/>
-    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="授权" android:onClick="bt_auth"/>
+
+    <EditText
+        android:id="@+id/et_auth_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:gravity="start"
+        android:hint="请输入授权码"
+        android:lineSpacingExtra="5dp"
+        android:padding="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="#000"
+        android:textSize="13dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="bt_auth"
+        android:text="授权" />
 </LinearLayout>

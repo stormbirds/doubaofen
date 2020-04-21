@@ -20,7 +20,7 @@ public class TaskUtils {
     }
 
     public void onNext() {
-        if (App.getInstance().startRun.booleanValue()) {
+        if (App.getInstance().startRun) {
             if (this.current >= this.currentTasks.size()) {
                 App.getInstance().startRun = false;
                 App.getInstance().resetStartUI();

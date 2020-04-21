@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+
 import com.tiangou.douxiaomi.R;
 import com.tiangou.douxiaomi.SPUtils;
 import com.tiangou.douxiaomi.jni.Jni;
@@ -14,7 +15,7 @@ public class AuthActivity extends AppCompatActivity {
     EditText et_authCode;
     TextView tv_title;
 
-    /* access modifiers changed from: protected */
+    @Override
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         setContentView((int) R.layout.activity_auth);

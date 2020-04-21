@@ -2,7 +2,9 @@ package com.tiangou.douxiaomi;
 
 import android.accessibilityservice.AccessibilityService;
 import android.graphics.Rect;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
 import android.support.v4.view.accessibility.AccessibilityNodeInfoCompat;
 import android.view.accessibility.AccessibilityNodeInfo;
 import java.util.ArrayList;
@@ -13,6 +15,7 @@ import java.util.List;
 public class ServiceUtils {
     public static Rect mRecycleRect = new Rect();
 
+    @RequiresApi(api = Build.VERSION_CODES.ICE_CREAM_SANDWICH)
     public static boolean clickView(AccessibilityNodeInfo accessibilityNodeInfo) {
         if (accessibilityNodeInfo == null) {
             return false;
@@ -34,6 +37,7 @@ public class ServiceUtils {
     }
 
     public static class order implements Comparator<AccessibilityNodeInfo> {
+        @RequiresApi(api = Build.VERSION_CODES.ICE_CREAM_SANDWICH)
         public int compare(AccessibilityNodeInfo accessibilityNodeInfo, AccessibilityNodeInfo accessibilityNodeInfo2) {
             Rect rect = new Rect();
             accessibilityNodeInfo.getBoundsInScreen(rect);

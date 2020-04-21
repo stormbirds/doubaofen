@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.Application;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +13,7 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import com.tiangou.douxiaomi.activity.BaseActivity;
 import com.tiangou.douxiaomi.bean.FunctionBean;
 import com.tiangou.douxiaomi.event.SolveFinishEvent;
@@ -19,10 +21,14 @@ import com.tiangou.douxiaomi.function.impl.base.BaseImpl;
 import com.tiangou.douxiaomi.service.AccessService;
 import com.tiangou.douxiaomi.utils.DataConfig;
 import com.yhao.floatwindow.FloatWindow;
+import com.yhao.floatwindow.MoveType;
 import com.yhao.floatwindow.PermissionListener;
+import com.yhao.floatwindow.Screen;
+
 import de.greenrobot.event.EventBus;
 import de.greenrobot.event.Subscribe;
 import de.greenrobot.event.ThreadMode;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -101,6 +107,7 @@ public class App extends Application {
                 }
             });
             this.txtBack.setOnClickListener(new View.OnClickListener() {
+                @RequiresApi(api = Build.VERSION_CODES.HONEYCOMB)
                 public void onClick(View view) {
                     if (App.this.taskUtils != null) {
                         App.getInstance().startRun = false;
@@ -114,9 +121,16 @@ public class App extends Application {
                     }
                 }
             });
-            FloatWindow.with(getApplicationContext()).setView(inflate).setWidth(0, 0.2f).setHeight(1, 0.2f).setX(0, 0.8f).setY(1, 0.3f).setMoveType(2, 100, -100).setMoveStyle(500, new BounceInterpolator()).setPermissionListener(new PermissionListener() {
+            FloatWindow.with(getApplicationContext()).setView(inflate)
+                    .setWidth(Screen.width , 0.2f)
+                    .setHeight(Screen.height, 0.2f)
+                    .setX(Screen.width, 0.8f)
+                    .setY(Screen.height, 0.3f)
+                    .setMoveType(MoveType.active, 100, -100)
+                    .setMoveStyle(500, new BounceInterpolator())
+                    .setPermissionListener(new PermissionListener() {
                 public void onSuccess() {
-                    Toast.makeText(App.this.getApplicationContext(), "成功授权悬浮窗权限", Toast.LENGTH_SHORT ).show();
+                    Toast.makeText(App.this.getApplicationContext(), "成功授权悬浮窗权限", Toast.LENGTH_SHORT).show();
                 }
 
                 public void onFail() {
@@ -175,36 +189,34 @@ public class App extends Application {
     }
 
     private void initGlobeActivity() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
-            registerActivityLifecycleCallbacks(new ActivityLifecycleCallbacks() {
-                public void onActivitySaveInstanceState(Activity activity, Bundle bundle) {
-                }
+        registerActivityLifecycleCallbacks(new ActivityLifecycleCallbacks() {
+            public void onActivitySaveInstanceState(Activity activity, Bundle bundle) {
+            }
 
-                public void onActivityCreated(Activity activity, Bundle bundle) {
-                    Activity unused = App.this.currentActivity = activity;
-                }
+            public void onActivityCreated(Activity activity, Bundle bundle) {
+                Activity unused = App.this.currentActivity = activity;
+            }
 
-                public void onActivityDestroyed(Activity activity) {
-                    Activity unused = App.this.currentActivity = activity;
-                }
+            public void onActivityDestroyed(Activity activity) {
+                Activity unused = App.this.currentActivity = activity;
+            }
 
-                public void onActivityStarted(Activity activity) {
-                    Activity unused = App.this.currentActivity = activity;
-                }
+            public void onActivityStarted(Activity activity) {
+                Activity unused = App.this.currentActivity = activity;
+            }
 
-                public void onActivityResumed(Activity activity) {
-                    Activity unused = App.this.currentActivity = activity;
-                }
+            public void onActivityResumed(Activity activity) {
+                Activity unused = App.this.currentActivity = activity;
+            }
 
-                public void onActivityPaused(Activity activity) {
-                    Activity unused = App.this.currentActivity = activity;
-                }
+            public void onActivityPaused(Activity activity) {
+                Activity unused = App.this.currentActivity = activity;
+            }
 
-                public void onActivityStopped(Activity activity) {
-                    Activity unused = App.this.currentActivity = activity;
-                }
-            });
-        }
+            public void onActivityStopped(Activity activity) {
+                Activity unused = App.this.currentActivity = activity;
+            }
+        });
     }
 
     public BaseActivity getCurrentActivity() {

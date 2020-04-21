@@ -1516,4 +1516,5 @@
     <style name="permission_PermissionActivity">
         <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
+
 </resources>

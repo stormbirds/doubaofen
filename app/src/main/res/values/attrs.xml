@@ -6,9 +6,7 @@
     </attr>
     <attr name="actionBarPopupTheme" format="reference">
     </attr>
-    <attr name="actionBarSize" format="dimension">
-        <enum name="wrap_content" value="0" />
-    </attr>
+
     <attr name="actionBarSplitStyle" format="reference">
     </attr>
     <attr name="actionBarStyle" format="reference">
@@ -81,14 +79,7 @@
     </attr>
     <attr name="alpha" format="float">
     </attr>
-    <attr name="alphabeticModifiers">
-        <flag name="ALT" value="2" />
-        <flag name="CTRL" value="4096" />
-        <flag name="FUNCTION" value="8" />
-        <flag name="META" value="65536" />
-        <flag name="SHIFT" value="1" />
-        <flag name="SYM" value="4" />
-    </attr>
+
     <attr name="arrowHeadLength" format="dimension">
     </attr>
     <attr name="arrowShaftLength" format="dimension">
@@ -103,10 +94,7 @@
     </attr>
     <attr name="autoSizeStepGranularity" format="dimension">
     </attr>
-    <attr name="autoSizeTextType">
-        <enum name="none" value="0" />
-        <enum name="uniform" value="1" />
-    </attr>
+
     <attr name="background" format="reference">
     </attr>
     <attr name="backgroundSplit" format="reference|color">
@@ -115,13 +103,7 @@
     </attr>
     <attr name="backgroundTint" format="color">
     </attr>
-    <attr name="backgroundTintMode">
-        <enum name="multiply" value="14" />
-        <enum name="screen" value="15" />
-        <enum name="src_atop" value="9" />
-        <enum name="src_in" value="5" />
-        <enum name="src_over" value="3" />
-    </attr>
+
     <attr name="barLength" format="dimension">
     </attr>
     <attr name="barrierAllowsGoneWidgets" format="boolean">
@@ -158,10 +140,7 @@
     </attr>
     <attr name="buttonBarStyle" format="reference">
     </attr>
-    <attr name="buttonGravity">
-        <flag name="bottom" value="80" />
-        <flag name="top" value="48" />
-    </attr>
+
     <attr name="buttonPanelSideLayout" format="reference">
     </attr>
     <attr name="buttonStyle" format="reference">
@@ -170,13 +149,7 @@
     </attr>
     <attr name="buttonTint" format="color">
     </attr>
-    <attr name="buttonTintMode">
-        <enum name="multiply" value="14" />
-        <enum name="screen" value="15" />
-        <enum name="src_atop" value="9" />
-        <enum name="src_in" value="5" />
-        <enum name="src_over" value="3" />
-    </attr>
+
     <attr name="chainUseRtl" format="boolean">
     </attr>
     <attr name="checkboxStyle" format="reference">
@@ -251,15 +224,7 @@
     </attr>
     <attr name="dialogTheme" format="reference">
     </attr>
-    <attr name="displayOptions">
-        <flag name="disableHome" value="32" />
-        <flag name="homeAsUp" value="4" />
-        <flag name="none" value="0" />
-        <flag name="showCustom" value="16" />
-        <flag name="showHome" value="2" />
-        <flag name="showTitle" value="8" />
-        <flag name="useLogo" value="1" />
-    </attr>
+
     <attr name="divider" format="reference">
     </attr>
     <attr name="dividerHorizontal" format="reference">
@@ -310,21 +275,12 @@
     </attr>
     <attr name="fontProviderCerts" format="reference">
     </attr>
-    <attr name="fontProviderFetchStrategy">
-        <enum name="async" value="1" />
-        <enum name="blocking" value="0" />
-    </attr>
-    <attr name="fontProviderFetchTimeout" format="integer">
-        <enum name="forever" value="-1" />
-    </attr>
+
     <attr name="fontProviderPackage" format="string">
     </attr>
     <attr name="fontProviderQuery" format="string">
     </attr>
-    <attr name="fontStyle">
-        <enum name="italic" value="1" />
-        <enum name="normal" value="0" />
-    </attr>
+
     <attr name="fontWeight" format="integer">
     </attr>
     <attr name="gapBetweenBars" format="dimension">
@@ -372,14 +328,7 @@
     </attr>
     <attr name="iconTint" format="color">
     </attr>
-    <attr name="iconTintMode">
-        <enum name="add" value="16" />
-        <enum name="multiply" value="14" />
-        <enum name="screen" value="15" />
-        <enum name="src_atop" value="9" />
-        <enum name="src_in" value="5" />
-        <enum name="src_over" value="3" />
-    </attr>
+
     <attr name="iconifiedByDefault" format="boolean">
     </attr>
     <attr name="imageButtonStyle" format="reference">
@@ -568,19 +517,7 @@
     </attr>
     <attr name="navigationIcon" format="reference">
     </attr>
-    <attr name="navigationMode">
-        <enum name="listMode" value="1" />
-        <enum name="normal" value="0" />
-        <enum name="tabMode" value="2" />
-    </attr>
-    <attr name="numericModifiers">
-        <flag name="ALT" value="2" />
-        <flag name="CTRL" value="4096" />
-        <flag name="FUNCTION" value="8" />
-        <flag name="META" value="65536" />
-        <flag name="SHIFT" value="1" />
-        <flag name="SYM" value="4" />
-    </attr>
+
     <attr name="overlapAnchor" format="boolean">
     </attr>
     <attr name="paddingBottomNoButtons" format="dimension">
@@ -647,19 +584,7 @@
         <enum name="OVAL" value="1" />
         <enum name="RING" value="3" />
     </attr>
-    <attr name="showAsAction">
-        <flag name="always" value="2" />
-        <flag name="collapseActionView" value="8" />
-        <flag name="ifRoom" value="1" />
-        <flag name="never" value="0" />
-        <flag name="withText" value="4" />
-    </attr>
-    <attr name="showDividers">
-        <flag name="beginning" value="1" />
-        <flag name="end" value="4" />
-        <flag name="middle" value="2" />
-        <flag name="none" value="0" />
-    </attr>
+
     <attr name="showText" format="boolean">
     </attr>
     <attr name="showTitle" format="boolean">
@@ -768,35 +693,15 @@
     </attr>
     <attr name="thumbTint" format="color">
     </attr>
-    <attr name="thumbTintMode">
-        <enum name="add" value="16" />
-        <enum name="multiply" value="14" />
-        <enum name="screen" value="15" />
-        <enum name="src_atop" value="9" />
-        <enum name="src_in" value="5" />
-        <enum name="src_over" value="3" />
-    </attr>
+
     <attr name="tickMark" format="reference">
     </attr>
     <attr name="tickMarkTint" format="color">
     </attr>
-    <attr name="tickMarkTintMode">
-        <enum name="add" value="16" />
-        <enum name="multiply" value="14" />
-        <enum name="screen" value="15" />
-        <enum name="src_atop" value="9" />
-        <enum name="src_in" value="5" />
-        <enum name="src_over" value="3" />
-    </attr>
+
     <attr name="tint" format="color">
     </attr>
-    <attr name="tintMode">
-        <enum name="multiply" value="14" />
-        <enum name="screen" value="15" />
-        <enum name="src_atop" value="9" />
-        <enum name="src_in" value="5" />
-        <enum name="src_over" value="3" />
-    </attr>
+
     <attr name="title" format="string">
     </attr>
     <attr name="titleMargin" format="dimension">
@@ -837,14 +742,7 @@
     </attr>
     <attr name="trackTint" format="color">
     </attr>
-    <attr name="trackTintMode">
-        <enum name="add" value="16" />
-        <enum name="multiply" value="14" />
-        <enum name="screen" value="15" />
-        <enum name="src_atop" value="9" />
-        <enum name="src_in" value="5" />
-        <enum name="src_over" value="3" />
-    </attr>
+
     <attr name="type">
         <enum name="circle" value="1" />
         <enum name="round" value="2" />
